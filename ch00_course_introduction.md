@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: default
-class: invert
+class: 
 size: 16:9
 paginate: true
 footer: 國立陽明交通大學 電子與光子學士學位學程
@@ -68,19 +68,8 @@ style: |
 - #### Email: jacky.jw.lin@nycu.edu.tw
 
 # 課程助教
-<div class="columns">
-<div>
-
-## 電子與光子學程
-- 黃千晏 so3355589@gmail.com
-</div>
-<div>
-
-## 資財系
-- 林思圻 lulubbyg.mg13@nycu.edu.tw
-- 林宸絨 nycuiim20020611@gmail.com
-</div>
-</div>
+- 陳宗佑 joey76171.sc13@nycu.edu.tw
+- 蔡孟哲 aayy0917.sc13@nycu.edu.tw
 
 # 生活中怎麼表達資料庫概念
 [Excel Files vs Database](https://youtu.be/7yYbbKyyHvw?si=Y3vrhXjLHS4FGtkN)
