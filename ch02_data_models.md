@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
 footer: 國立陽明交通大學 電子與光子學士學位學程
@@ -90,7 +90,7 @@ style: |
 - A **business rule** is a brief, precise, and unambiguous description of a policy, procedure, or principle within a specific organization
   - made from company managers, policy makers, department managers, and written procedures
   - used to define entities, attributes, relationships, and constraints
-- Example: A customer may generate many invoices' may be translated into data model
+- Example: 'A customer may generate many invoices' may be translated into data model
   - Customer and invoice are objects of interest and should be represented by respective <span class="brown-text">entities</span>
   - There is a **'generate'** <span class="brown-text">relationship</span> between customer and invoice
   - The generate relationship is one-to-many (1:M)
@@ -107,12 +107,15 @@ style: |
   - Which terminology should be selected? (user, person or people)
 
 # Supplement - Naming Conventions
-[Udemy Video of naming conventions](https://youtu.be/xFs8H_YHqHc?si=2m55anO7oxjQ6a8h)
+[![Udemy Video of naming conventions](https://i.ytimg.com/vi/xFs8H_YHqHc/mqdefault.jpg)](https://youtu.be/xFs8H_YHqHc?si=2m55anO7oxjQ6a8h)
 [Naming conventions of MySQL](https://medium.com/@centizennationwide/mysql-naming-conventions-e3a6f6219efe)
+
+
+
 
 # The Evolution of Data Models
 Data models represent a lot of thought as to what a database is, what it should do, the types of structures that it should employ, and the technology that would be used to implement these structures
-![bg right:55% w:700 data models evolution](restricted/CFig02_05.jpg)
+![bg right:55% w:700 data models evolution](files/image/CFig02_05.jpg)
 
 # Hierarchical Models
 - The hierarchical model organizes the data into a tree structure which consist of a single root node where each record is having a parent record and many child records and expands like a tree
@@ -149,8 +152,8 @@ The relational model’s foundation is a mathematical concept known as a relatio
 </style>
 
 <div class="grid">
-    <img src="restricted/CFig02_01.jpg" alt="Linking relational tables">
-    <img src="restricted/CFig02_02.jpg" alt="A relational diagram">
+    <img src="files/image/CFig02_01.jpg" alt="Linking relational tables">
+    <img src="files/image/CFig02_02.jpg" alt="A relational diagram">
 </div>
 
 # Supplement of Relational Model
@@ -171,7 +174,7 @@ The relational model’s foundation is a mathematical concept known as a relatio
 - Entity – an entity is represented in the ERD by a rectangle (entity box)
 - Attributes – each entity consists of a set of attributes that describes particular characteristics of the entity
 - Relationships – relationships describe associations among data
-![bg right:50% w:600 ER model](restricted/CFig02_03.jpg)
+![bg right:50% w:600 ER model](files/image/CFig02_03.jpg)
 
 # Crow's Foot Notations
 ![bg right:50% w:600 Crow's Foot notation](https://discourse.omnigroup.com/uploads/default/original/2X/5/54b713a5fe9dc79b458b8afe1a5a148320ba132d.gif)
@@ -197,7 +200,7 @@ In the object-oriented data model (OODM), both data and its relationship are con
 - OODM are typically depicted using Unified Modeling Language (UML) class diagrams
 
 # OODM Diagram
-![bg right:70% w:100%](restricted/CFig02_04.jpg)
+![bg right:70% w:100%](files/image/CFig02_04.jpg)
 
 # ERDM and O/R DBMS
 - The extended relational data model (ERDM) adds many of the OO model’s features within the simpler relational database structure
@@ -250,7 +253,7 @@ Products of O/R DBMS
 
 # Degrees of Data Abstraction
 - External, Conceptual, Internal and Physical levels
-  ![bg right:50% w:600 data abstraction levels](restricted/CFig02_06.jpg)
+  ![bg right:50% w:600 data abstraction levels](files/image/CFig02_06.jpg)
 
 # External Model
 - The end users’ view of the data environment
@@ -258,7 +261,7 @@ Products of O/R DBMS
 - The external views represent **subsets** of the database
   - Easy to scope and communicate specific data required to support targeted end users
   - Ensure **security** constraints in the database design
-  ![bg right:40% w:500 external model](restricted/CFig02_07.jpg)
+  ![bg right:40% w:500 external model](files/image/CFig02_07.jpg)
 
 # Conceptual Model
 - A **global view** of the entire database by the entire organization
@@ -266,13 +269,13 @@ Products of O/R DBMS
 - Identify and high-level describe main data objects
 - Independent of both software and hardware
 - The term **conceptual design** refers to creating a conceptual data model by ER diagrams
-  ![bg right:40% w:500 conceptual model](restricted/CFig02_08.jpg)
+  ![bg right:40% w:500 conceptual model](files/image/CFig02_08.jpg)
 
 # Internal Model
 - Use the database constructs of the chosen DBMS to match the conceptual model’s characteristics and constraints to build the internal model
 - The term **logical design** refers to creating a logical data model by a set of SQL statements
 - Software dependent and hardware independent
-![bg right:40% w:500 internal model](restricted/CFig02_09.jpg)
+![bg right:40% w:500 internal model](files/image/CFig02_09.jpg)
 
 # Physical Model
 - Operates at the lowest level of abstraction, describing which physical storage device the data is saved and how to access the data
@@ -280,7 +283,7 @@ Products of O/R DBMS
 - Both software and hardware dependent
 
 # Levels of Data Abstraction 
-![bg right:65% w:800 internal model](restricted/CTable02_04.jpg)
+![bg right:65% w:800 internal model](files/image/CTable02_04.jpg)
 
 # Review Questions
 - Why data models are important?

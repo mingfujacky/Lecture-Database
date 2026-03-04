@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
 footer: 國立陽明交通大學 電子與光子學士學位學程
@@ -58,19 +58,13 @@ style: |
 # Why Database
 - Databases evolved from the need to manage **large amounts** of data in an **organized and efficient** manner
 - Databases is everywhere
-![bg right:60% w:600 Database is everywhere](restricted/CFig01_01.jpg)
+![bg right:60% w:600 Database is everywhere](files/image/CFig01_01.jpg)
 
-# DIKW Pyramid
-- **Data** consists of **raw facts**
-- **Information** is about adding context to reveal the **meaning of data**
-- **Knowledge** is about **how to use** the information
-- **Wisdom** is about **when to take** action
-![bg right:50% w:600 DIKW Pyramid](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*s5EFf2e8t0wqCAnSglUt_Q.png)
 
 # Data versus Information
 - Information is the result of processing raw data to reveal the meaning of data
 - **Data management** is a discipline that focuses on the proper generation, storage, and retrieval of data
-![bg right:60% w:750 Data vs Information](restricted/CFig01_02.jpg)
+![bg right:60% w:750 Data vs Information](files/image/CFig01_02.jpg)
 
 # Introducing the Database
 - A **database** is a collection of related data.
@@ -88,7 +82,7 @@ style: |
   - Better data integration
   - Minimized data inconsistency
   - Improved data access
-![bg right:40% w:500 DBMS role](restricted/CFig01_04.jpg)
+![bg right:40% w:500 DBMS role](files/image/CFig01_04.jpg)
 
 # Types of DBMS
 - by # of users: single-user, multiple-user 
@@ -100,26 +94,26 @@ style: |
 - **Database design** refers to the activities that focus on the design of the database structure that will be used to store and manage end-user data
 - Poorly designed databases can lead to slow performance, data integrity issues, security vulnerabilities, and challenges in scaling applications.
 
-![bg right:50% w:600 poor database design](restricted/CFig01_05.jpg)
+![w:800 poor database design](files/image/CFig01_05.jpg)
 
-# Database System Design Process
+# Application Design Process
 - <span class="brown-text">Requirements & Analysis</span>
  <span class="small-text">Discover users requirements, analyze what data should be maintained</span>
-- <span class="brown-text">Database design</span>
+- <span class="brown-text">Data / Database design</span>
   - <span class="small-text">Conceptual model</span>
   - <span class="small-text">Choice of a DBMS</span>
   - <span class="small-text">Logical model</span>
   - <span class="small-text">Physical model</span>
 - <span class="brown-text">System design</span>: <span class="small-text">design system functionality and user interface</span>
-- <span class="brown-text">Implementation</span>: <span class="small-text">realize physical model on running environment and optimize performance</span>
+- <span class="brown-text">Implementation</span>: <span class="small-text">realize algorithms and physical data model on running environment and optimize performance</span>
 
 ![bg right:30% w:400](https://techforumugm.files.wordpress.com/2020/03/dd01.png?w=816&h=352&crop=1)
 
 # Database Design Process
-![bg right:60% w:90%](restricted/database_design_process.jpg)
+![bg right:60% w:90%](files/image/database_design_process.jpg)
 
 # A Good Database Design Following Database Design Process
-![bg right:50% w:600 poor database design](restricted/CFig01_06.jpg)
+![bg right:50% w:600 poor database design](files/image/CFig01_06.jpg)
 
 # Database System Environment
 Collect, store, manage, and use of data within a database environment, including:
@@ -129,7 +123,7 @@ Collect, store, manage, and use of data within a database environment, including
 - <span class='small-text'>Procedures</span>
 - <span class='small-text'>Data</span>
 
-![bg right:55% w:100% database system environment](restricted/CFig01_10.jpg)
+![bg right:55% w:100% database system environment](files/image/CFig01_10.jpg)
 
 # DBMS Functions
 - Data dictionary management to store definitions of data elements and their relationships
@@ -145,7 +139,7 @@ Collect, store, manage, and use of data within a database environment, including
 # Disadvantages of DBMS
 - Increased costs
 - Management complexity
-- Maintaining currency (operation expertise and man power)
+- Maintaining expenditure (operation expertise and man power)
 - Vendor dependency (vendor lock-in)
 - Frequent upgrade/replacement cycles
 
@@ -170,6 +164,12 @@ Data Analyst / Data Scientist| Analyze varied data to generate insights and pred
 - When no DBMS may suffice: real-time requests, complexity of data, special operation
 
 # Review Questions
-- What is a database 
-- What is a DBMS
-- Which database professional career you are interested in?
+- What is a database?
+- What is a DBMS?
+-	Which is NOT the advantage of using a DBMS?
+(A) Improve data sharing (B) Reduce hardware cost (C) Enhanced data security
+(D) Minimize data inconsistency
+- What is NOT the main components of a database system environment?
+(A) Hardware (B) Internet connection (C) Data (D) Procedures
+
+
