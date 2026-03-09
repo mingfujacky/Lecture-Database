@@ -116,7 +116,7 @@ style: |
 
 # 期末專題報告至少需包含以下內容
 - **Requirements** we plan to fulfill and/or **problems** we plan to solve
-- Teaming (roles and peer evaluation)
+- Teaming (roles)
 - User requirements and business rules
 - Database design (ERD, normalization, data dictionary)
 - Database implementation (SQL script)
