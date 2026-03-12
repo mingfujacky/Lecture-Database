@@ -52,7 +52,7 @@ style: |
   }
 ---
 # Chapter 2: Data Models
-- Data modeling is to build data models, which is the first step in the database design journey, <span class="brown-text">serving as a bridge</span> between real-world objects and the computer database.
+- Data modeling is to build data models, which is the <span class="brown-text">first step</span> in the database design journey, serving as a <span class="brown-text"> bridge</span> between real-world objects and the computer database.
 - One big problem of database design is that designers, programmers, and end users see data in different ways, which introduce <span class="brown-text">misunderstanding</span> and increase communication cost.
 - <span class="brown-text">Database designers </span>must obtain a precise description (<span class="brown-text">data model</span>) of the data's nature and environments within the organization to reduce communication efforts.
 
@@ -60,10 +60,11 @@ style: |
 - Data modeling refers to the <span class="brown-text">process</span> of creating a specific data model for a determined problem domain (mini-world). 
 - Data modeling is an iterative, progressive process.
 - A <span class="brown-text">data model</span> is a relatively simple representation of more complex real-world objects
-  - Entity (table)
-  - Attribute (column)
-  - Relationship (linkage between tables)
-  - Constrain
+  - Entity (objects of interest)
+  - Attribute (properties of entity)
+  - Relationship (linkage between entities)
+  - Constraint (restriction on data)
+- A data model is a <span class="brown-text">communication tool</span> between end users and database designers, and between database designers and programmers.
 
 # The Importance of Data Models
 - Data models are a <span class="brown-text">communication tool</span>
@@ -95,24 +96,6 @@ style: |
   - There is a **'generate'** <span class="brown-text">relationship</span> between customer and invoice
   - The generate relationship is one-to-many (1:M)
 
-# Naming Conventions
-- Names should be descriptive and familiar to the users
-- A good naming convention can 
-  - Make less confusion and reduce errors
-  - Promote code consistently and readability 
-- Follow organization practice or develop at the start of project by considering
-  - Should table name and column name be singular or plural? (student or students)
-  - Should prefix tables or columns? (name or prod_name)
-  - Should use capital letters for naming? (cap_cap, capCap or CapCap)
-  - Which terminology should be selected? (user, person or people)
-
-# Supplement - Naming Conventions
-[![Udemy Video of naming conventions](https://i.ytimg.com/vi/xFs8H_YHqHc/mqdefault.jpg)](https://youtu.be/xFs8H_YHqHc?si=2m55anO7oxjQ6a8h)
-[Naming conventions of MySQL](https://medium.com/@centizennationwide/mysql-naming-conventions-e3a6f6219efe)
-
-
-
-
 # The Evolution of Data Models
 Data models represent a lot of thought as to what a database is, what it should do, the types of structures that it should employ, and the technology that would be used to implement these structures
 ![bg right:55% w:700 data models evolution](files/image/CFig02_05.jpg)
@@ -123,12 +106,7 @@ Data models represent a lot of thought as to what a database is, what it should 
 
 # Network Models
 - In the network model, the user perceives the network database as a collection of records in 1:M relationships. However, unlike the hierarchical model, the network model allows a record to have more than one parent.
-![bg right:50% w:600 network model](https://www.myreadingroom.co.in/images/stories/docs/dbms/Network%20Data%20Model.JPG)
-
-# Database Concepts Inherited from Network Model
-- The <span class="brown-text">**schema**</span> is the conceptual and structural definition of a whole database. Once you claim the schema of a database, it must now no longer be modified often because it will distort the data organization inside the Database. 
-- The <span class="brown-text">**data manipulation language (DML)**</span> defines the way to insert, read, update, delete data in database
-- A <span class="brown-text">**schema data definition language (DDL)**</span> enables the DBA to define the schema components (create, drop, alter table, create index or trigger)
+![bg right:50% w:600 network model](https://media.geeksforgeeks.org/wp-content/uploads/20200727113000/network.png)
 
 # Relational Model
 The relational model’s foundation is a mathematical concept known as a relation, which is introduced by Edgar F. Codd in 1969.
@@ -156,13 +134,13 @@ The relational model’s foundation is a mathematical concept known as a relatio
     <img src="files/image/CFig02_02.jpg" alt="A relational diagram">
 </div>
 
-# Supplement of Relational Model
+# Relational Model Terminology
 - Relation schema
 - Relational database schema
 - Degree of a relation
 - Cardinality of a relation
 - Relation state (or relation instance)
-[Relational model terminology](https://youtu.be/Q45sr5p_NmQ?si=cr53etNXoX1BIpLf)
+[![Relational model terminology](https://i.ytimg.com/vi/Q45sr5p_NmQ/mqdefault.jpg)](https://youtu.be/Q45sr5p_NmQ?si=cr53etNXoX1BIpLf)
 
 # Entity Relationship Model
 - Although the relational model was a vast improvement over the hierarchical and network models, it still lacked the features that would make it an effective database design tool.
@@ -179,16 +157,9 @@ The relational model’s foundation is a mathematical concept known as a relatio
 # Crow's Foot Notations
 ![bg right:50% w:600 Crow's Foot notation](https://discourse.omnigroup.com/uploads/default/original/2X/5/54b713a5fe9dc79b458b8afe1a5a148320ba132d.gif)
 
-# Relational Model vs Entity Relationship Model
-ER Model first, then converted into Relational Model for DBMS implementation.
-
-|Aspect	| ER Model	| Relational Model
-|-------|-----------|-----------------
-Used For|	Conceptual database design|	Logical database implementation
-Representation|	ER Diagram (graphical)|	Tables (relational schema)
-Elements|	Entities, Attributes, Relationships|	Tables, Attributes, Tuples
-Constraints|	Cardinality in ER Diagram|	Primary/Foreign keys, SQL constraints
-Conversion|	Converted to Relational Model|	Implemented in DBMS
+# Semantic Model
+- The semantic data model organizes the data based on the meaning and logical relationships of real-world objects, which consists of entities and attributes where each record is connected by descriptive links and expands like a network of information.
+![bg right:50% w:150% semantic model](https://www.gooddata.com/img/blog/_2000xauto/semantic-data-model-example.png.webp)
 
 # Object-Oriented Model
 In the object-oriented data model (OODM), both data and its relationship are contained in a single structure known as an object
@@ -228,11 +199,7 @@ Products of O/R DBMS
 # Emerging Data Models: Big Data and NoSQL
 - **Big Data** refers to a movement to find new and better ways to manage large amounts which DBMS can not manage
 - Big Data characteristics (3 Vs) : volume, velocity, and variety
-- Most frequently used Big Data technologies
-  - Hadoop: an **ecosystem** provides a collection of softwares to operate big data
-  - Hadoop Distributed File System (HDFS) is a fault-tolerant **file storage** system
-  - MapReduce is an distributed **computational framework**
-  - NoSQL database is a large-scale distributed **database system** that stores unstructured and semi-structured data in efficient ways
+- NoSQL database is a large-scale distributed **database system** that stores unstructured and semi-structured data in efficient ways
 
 # NoSQL Databases
 - Schemaless
@@ -285,13 +252,43 @@ Products of O/R DBMS
 # Levels of Data Abstraction 
 ![bg right:65% w:800 internal model](files/image/CTable02_04.jpg)
 
+# Relational Model vs Entity Relationship Model
+ER Model first, then converted into Relational Model for DBMS implementation.
+
+|Aspect	| ER Model	| Relational Model
+|-------|-----------|-----------------
+Used For|	Conceptual database design|	Logical database implementation
+Representation|	ER Diagram (graphical)|	Tables (relational schema)
+Elements|	Entities, Attributes, Relationships|	Tables, Attributes, Tuples
+Constraints|	Cardinality in ER Diagram|	Primary/Foreign keys, SQL constraints
+Conversion|	Converted to Relational Model|	Implemented in DBMS
+
+# Naming Conventions
+- Names should be descriptive and familiar to the users
+- A good naming convention can 
+  - Make less confusion and reduce errors
+  - Promote code consistently and readability 
+- Follow organization practice or develop at the start of project by considering
+  - Should table name and column name be singular or plural? (student or students)
+  - Should prefix tables or columns? (name or prod_name)
+  - Should use capital letters for naming? (cap_cap, capCap or CapCap)
+  - Which terminology should be selected? (user, person or people)
+
+# Supplement - Naming Conventions
+[![Udemy Video of naming conventions](https://i.ytimg.com/vi/xFs8H_YHqHc/mqdefault.jpg)](https://youtu.be/xFs8H_YHqHc?si=2m55anO7oxjQ6a8h)
+[Naming conventions of MySQL](https://medium.com/@centizennationwide/mysql-naming-conventions-e3a6f6219efe)
+
 # Review Questions
 - Why data models are important?
 - What are the data model basic building blocks
 - How have the major data models evolved
 - Explain NoSQL characteristics
 - What are the four levels of data abstraction
+- Which of the following is NOT a type of data models?
+A. Relational Model
+B. Hierarchical Model
+C. Waterfall Model
+D. NoSQL Model
 
 # Homework #A
 資料庫課程作業(A)
-

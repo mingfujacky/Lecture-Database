@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
 footer: 國立陽明交通大學 電子與光子學士學位學程
@@ -62,7 +62,7 @@ style: |
 - If a row was added (StudentID = 1234 and Semester = 5), then the functional dependency would no longer exist.
 
 # Example 2 of Functional Dependence
-![bg right:40% w:600 FD in textbook](restricted/CFig03_01.jpg)
+![bg right:40% w:600 FD in textbook](files/image/CFig03_01.jpg)
 - STU_NUM → STU_LNAME
 - STU_NUM → (STU_LNAME, STU_FNAME, STU_GPA)
 - (STU_FNAME, STU_LNAME, STU_INIT, STU_PHONE) → (STU_DOB, STU_HRS, STU_GPA)
@@ -86,14 +86,14 @@ style: |
   - FK: establish relationships among tables
 
 # Example of Keys
-![bg right:50% w:600 keys](restricted/CFig03_01.jpg)
+![bg right:50% w:600 keys](files/image/CFig03_01.jpg)
 - Superkey: STU_NUM, (STU_NUM, STU_LNAME), (STU_FNAME, STU_LNAME, STU_INIT)
 - Candidate key: STU_NUM, (STU_FNAME, STU_LNAME, STU_INIT)
 - Primary key: STU_NUM
 - FK: DEPT_CODE, PROF_NUM 
 
 # Example of a Simple Relational Database
-![bg right:60% w:800 relational DB](restricted/CFig03_02.jpg)
+![bg right:60% w:800 relational DB](files/image/CFig03_02.jpg)
 
 # Relational Database Keys Comparison
 Key Type| Definition
@@ -121,37 +121,37 @@ RDBMS rely on integrity rules to ensure data consistency, accuracy, and reliabil
 - Example:  A customer might not yet have an assigned sales representative (allow null), but it will be impossible to have an invalid sales representative (must reference).
 
 # Illustration of Integrity Rules
-![bg right:60% w:800 relational DB](restricted/CFig03_03.jpg)
+![bg right:60% w:800 relational DB](files/image/CFig03_03.jpg)
 
 # Relational Database Theory - Relational Algebra
 - **Relational algebra** defines the theoretical way of manipulating table contents using relational operators.
 - Eight main relational operators: SELECT, PROJECT, JOIN, INTERSECT, UNION, DIFFERENCE, PRODUCT, and DIVIDE
 
-# Relational Set Operators (SELECT)
+# Relational Operators (SELECT)
 SELECT is an operator used to select a subset of rows
-![bg right:60% w:800 select table](restricted/CFig03_04.jpg)
+![bg right:60% w:800 select table](files/image/CFig03_04.jpg)
 
-# Relational Set Operators (PROJECT)
+# Relational Operators (PROJECT)
 PROJECT is an operator used to select a subset of columns
-![bg right:60% w:800 project table](restricted/CFig03_05.jpg)
+![bg right:60% w:800 project table](files/image/CFig03_05.jpg)
 
-# Relational Set Operators (UNION)
+# Relational Operators (UNION)
 UNION is an operator used to merge two tables into a new table, dropping duplicate rows
-![bg right:60% w:800 union table](restricted/CFig03_06.jpg)
+![bg right:60% w:800 union table](files/image/CFig03_06.jpg)
 
-# Relational Set Operators (INTERSECT)
+# Relational Operators (INTERSECT)
 INTERSECT is an operator used to yield only the rows that are common to two union-compatible tables
-![bg right:60% w:800 intersect table](restricted/CFig03_07.jpg)
+![bg right:60% w:800 intersect table](files/image/CFig03_07.jpg)
 
-# Relational Set Operators (DIFFERENCE)
+# Relational Operators (DIFFERENCE)
 DIFFERENCE is an operator used to yield all rows from one table that are not found in another union-compatible table
-![bg right:60% w:800 difference table](restricted/CFig03_08.jpg)
+![bg right:60% w:800 difference table](files/image/CFig03_08.jpg)
 
-# Relational Set Operators (PRODUCT)
+# Relational Operators (PRODUCT)
 PRODUCT is an operator used to yield all possible pairs of rows from two tables
-![bg right:60% w:800 product table](restricted/CFig03_09.jpg)
+![bg right:60% w:800 product table](files/image/CFig03_09.jpg)
 
-# Relational Set Operators (JOIN)
+# Relational Operators (JOIN)
 JOIN allows information to be intelligently combined from two or more tables
 - **Inner join** – only returns matched records from the tables that are being joined
   - Natural join links tables by selecting only the rows with common values in their common attributes <span class="red-text">(generally DISCOURAGED in practice)</span>
@@ -174,29 +174,29 @@ PRODUCT -> SELECT -> PROJECT
 </style>
 
 <div class="grid">
-    <img src="restricted/CFig03_10.jpg" alt="two tables">
-    <img src="restricted/CFig03_11.jpg" alt="product">
-    <img src="restricted/CFig03_12.jpg" alt="select">
-    <img src="restricted/CFig03_13.jpg" alt="project">
+    <img src="files/image/CFig03_10.jpg" alt="two tables">
+    <img src="files/image/CFig03_11.jpg" alt="product">
+    <img src="files/image/CFig03_12.jpg" alt="select">
+    <img src="files/image/CFig03_13.jpg" alt="project">
 </div>
 
 # Left Outer Join
 <div class="grid">
-    <img src="restricted/CFig03_10.jpg" alt="two tables">
-    <img src="restricted/CFig03_14.jpg" alt="left outer join">
+    <img src="files/image/CFig03_10.jpg" alt="two tables">
+    <img src="files/image/CFig03_14.jpg" alt="left outer join">
 </div>
 
 # Right Outer Join
 <div class="grid">
-    <img src="restricted/CFig03_10.jpg" alt="two tables">
-    <img src="restricted/CFig03_15.jpg" alt="right outer join">
+    <img src="files/image/CFig03_10.jpg" alt="two tables">
+    <img src="files/image/CFig03_15.jpg" alt="right outer join">
 </div>
 
-# Relational Set Operators (DIVIDE)
+# Relational Operators (DIVIDE)
 The DIVIDE operator is used to answer questions about one set of data being associated with all values of data in another set of data
 - Determine which customers (on the left), if any, purchased every product shown in P_CODE table (in the middle).
 <div class="grid">
-    <img src="restricted/CFig03_16.jpg">
+    <img src="files/image/CFig03_16.jpg">
 
 # Data Dictionary and the System Catalog
 - **Data dictionary** describes all tables in the DB created by the user and designer
@@ -204,7 +204,7 @@ The DIVIDE operator is used to answer questions about one set of data being asso
   - Homonym – same name is used to label different attributes 
   - Synonym – different names are used to describe the same attribute. 
   - Both homonym and synonym should be avoided whenever possible 
-![bg right:40% w:90% data dictionary](restricted/CTable03_06.jpg)
+![bg right:40% w:90% data dictionary](files/image/CTable03_06.jpg)
  
 # Relationships within the Relational Database 
 - The one-to-many (1:M) relationship is the norm for relational databases 
@@ -213,18 +213,18 @@ The DIVIDE operator is used to answer questions about one set of data being asso
 
 # 1:M Relationship
 <div class="grid">
-    <img src="restricted/CFig03_17.jpg" alt="paint diagram">
-    <img src="restricted/CFig03_18.jpg" alt="paint table">
-    <img src="restricted/CFig03_19.jpg" alt="course diagram">
-    <img src="restricted/CFig03_20.jpg" alt="course table">
+    <img src="files/image/CFig03_17.jpg" alt="paint diagram">
+    <img src="files/image/CFig03_18.jpg" alt="paint table">
+    <img src="files/image/CFig03_19.jpg" alt="course diagram">
+    <img src="files/image/CFig03_20.jpg" alt="course table">
 </div>
 
 # 1:1 Relationship
 - 1:1 a professor only chair one department
 - 1:M a department employee many professors
 <div class="grid">
-    <img src="restricted/CFig03_21.jpg" alt="paint diagram">
-    <img src="restricted/CFig03_22.jpg" alt="paint table">
+    <img src="files/image/CFig03_21.jpg" alt="paint diagram">
+    <img src="files/image/CFig03_22.jpg" alt="paint table">
 </div>
 
 # M:N Relationship
@@ -232,23 +232,23 @@ The DIVIDE operator is used to answer questions about one set of data being asso
 - M:N relationship can be implemented by creating a new entity in 1:M relationships with the original entities
 - In Fig 3.24, the tables create many data redundancies and relational operation become complex and less efficiency  
 - <div class="grid">
-    <img src="restricted/CFig03_23.jpg" alt="paint diagram">
-    <img src="restricted/CFig03_24.jpg" alt="paint table">
+    <img src="files/image/CFig03_23.jpg" alt="paint diagram">
+    <img src="files/image/CFig03_24.jpg" alt="paint table">
 </div>
 
 # Introduce Composite Entry into M:N Relationship
 Table ENROLL is a composite entry (bridge entry, associative entry, link table) to help convert M:N to 1:M
 - <div class="grid">
-    <img src="restricted/CFig03_25.jpg" alt="">
-    <img src="restricted/CFig03_26.jpg" alt="">
+    <img src="files/image/CFig03_25.jpg" alt="">
+    <img src="files/image/CFig03_26.jpg" alt="">
 </div>
 
 # Data Redundancy Revisited
 - The relational database control of data redundancies through use of foreign keys
 - Data redundancy should be controlled except performance and historical data
 <div class="grid">
-    <img src="restricted/CFig03_29.jpg" alt="">
-    <img src="restricted/CFig03_30.jpg" alt="">
+    <img src="files/image/CFig03_29.jpg" alt="">
+    <img src="files/image/CFig03_30.jpg" alt="">
 </div>
 
 # Index to Increase Performance
@@ -258,7 +258,7 @@ Table ENROLL is a composite entry (bridge entry, associative entry, link table) 
 - The index key can have multiple attributes
 
 <div class="grid">
-    <img src="restricted/CFig03_31.jpg" alt="">
+    <img src="files/image/CFig03_31.jpg" alt="">
 </div>
 
 # Review Questions
