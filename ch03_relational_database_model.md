@@ -201,10 +201,13 @@ The DIVIDE operator is used to answer questions about one set of data being asso
 # Data Dictionary and the System Catalog
 - **Data dictionary** describes all tables in the DB created by the user and designer
 - **System catalog** describes all objects within the database
-  - Homonym – same name is used to label different attributes 
-  - Synonym – different names are used to describe the same attribute. 
-  - Both homonym and synonym should be avoided whenever possible 
-![bg right:40% w:90% data dictionary](files/image/CTable03_06.jpg)
+  - table names, table creator, table creation date, table size, and so on
+  - index names, authorized users, access proviledges, and so on
+- Both homonym and synonym should be avoided whenever possible by checking data dictionary and system catalog
+  - Homonym – the same name is used to describe different attributes.  (C_NAME for customer name and consultant name)
+  - Synonym – different names are used to describe the same attribute. (car vs auto)
+   
+![w:800 data dictionary](files/image/CTable03_06.jpg)
  
 # Relationships within the Relational Database 
 - The one-to-many (1:M) relationship is the norm for relational databases 
