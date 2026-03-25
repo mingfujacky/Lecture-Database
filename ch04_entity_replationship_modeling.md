@@ -45,7 +45,7 @@ style: |
 - Data modeling is the first step in database design, as a bridge between real-world objects and the database model implemented in the computer.
 - It is important to illustrate data-modeling details graphically through entity relationship diagrams (ERDs) to facilitate communication.
 <div class="middle-grid">
-    <img src="restricted/CFig02_05.jpg" alt="">
+    <img src="files/image/CFig02_05.jpg" alt="">
 </div>
 
 # Entity Relationship Model
@@ -75,7 +75,7 @@ style: |
 
 # Identifier and Composite identifier
 <div class="grid">
-    <img src="restricted/CFig04_02a.jpg" alt="">
+    <img src="files/image/CFig04_02a.jpg" alt="">
 </div>
 
 - CLASS_CODE is a identifier
@@ -83,8 +83,8 @@ style: |
 
 # Entity's Notation
 <div class="grid">
-    <img src="restricted/CFig04_01.jpg" alt="">
-    <img src="restricted/CFig04_03.jpg" alt="">
+    <img src="files/image/CFig04_01.jpg" alt="">
+    <img src="files/image/CFig04_03.jpg" alt="">
 </div>
 
 Required attribute: bold font
@@ -94,15 +94,15 @@ PK: in a separated cell with bold and underline font
   - If necessary, replace multi-value attribute by creating several new attributes
   - If necessary, replace multi-value attribute by creating an new entity
 <div class="grid">
-    <img src="restricted/CFig04_04.jpg" alt="">
-    <img src="restricted/CFig04_05.jpg" alt="">
+    <img src="files/image/CFig04_04.jpg" alt="">
+    <img src="files/image/CFig04_05.jpg" alt="">
 </div>
 <br>
 <span class="brown-text">Q: What is the pros and cons between the two replacement approaches</span>
 
 # Derived Attributes
 <div class="grid">
-    <img src="restricted/CFig04_06.jpg" alt="">
+    <img src="files/image/CFig04_06.jpg" alt="">
 </div>
 <br>
 <span class="brown-text">Q: What attribute is proper to use derived attributed, working_year or total_amount?</span>
@@ -116,8 +116,8 @@ PK: in a separated cell with bold and underline font
 
 # Relationship's Notation
 <div class="grid">
-    <img src="restricted/CFig04_07.jpg" alt="">
-    <img src="restricted/CFig04_08.jpg" alt="">
+    <img src="files/image/CFig04_07.jpg" alt="">
+    <img src="files/image/CFig04_08.jpg" alt="">
 </div>
 
 - (1, 4): one professor teach at least one and no more than four classes
@@ -150,8 +150,8 @@ Considering two entities: EMPLOYEE (strong) and DEPENDENT (weak)
 
 # Illustrate Relationship Between Weak & Strong Entity
 <div class="middle-grid">
-    <img src="restricted/CFig04_11.jpg" alt="">
-    <img src="restricted/CFig04_12.jpg" alt="">
+    <img src="files/image/CFig04_11.jpg" alt="">
+    <img src="files/image/CFig04_12.jpg" alt="">
 </div> 
 
 # Relationship Strength
@@ -163,8 +163,8 @@ Considering two entities: EMPLOYEE (strong) and DEPENDENT (weak)
 # Illustration of Relationship Strength
 
 <div class="middle-grid">
-    <img src="restricted/CFig04_09.jpg" alt="">
-    <img src="restricted/CFig04_10.jpg" alt="">
+    <img src="files/image/CFig04_09.jpg" alt="">
+    <img src="files/image/CFig04_10.jpg" alt="">
 </div> 
 
 - dotted line shows weak relationships; solid line shows strong relationships
@@ -191,20 +191,20 @@ Considering two entities: EMPLOYEE (strong) and DEPENDENT (weak)
 # Illustration of Relationship Participation
 
 <div class="middle-grid">
-    <img src="restricted/CFig04_13.jpg" alt="">
-    <img src="restricted/CFig04_14.jpg" alt="">
-    <img src="restricted/CFig04_15.jpg" alt="">
+    <img src="files/image/CFig04_13.jpg" alt="">
+    <img src="files/image/CFig04_14.jpg" alt="">
+    <img src="files/image/CFig04_15.jpg" alt="">
 </div> 
 
 # Relationship Degree
 <div class="middle-grid">
-    <img src="restricted/CFig04_16.jpg" alt="">
+    <img src="files/image/CFig04_16.jpg" alt="">
 </div> 
 
 # Recursive Relationship
 <div class="middle-grid">
-    <img src="restricted/CFig04_19.jpg" alt="">
-    <img src="restricted/CFig04_20.jpg" alt="">
+    <img src="files/image/CFig04_19.jpg" alt="">
+    <img src="files/image/CFig04_20.jpg" alt="">
 </div> 
 
 # Associative (Composite) Entities
@@ -216,8 +216,8 @@ Considering two entities: EMPLOYEE (strong) and DEPENDENT (weak)
 # Illustration of Associative Entities
 STUDENT has CLASS is a M:N relationship
 <div class="grid">
-    <img src="restricted/CFig03_23.jpg" alt="">
-    <img src="restricted/CFig04_26.jpg" alt="">
+    <img src="files/image/CFig03_23.jpg" alt="">
+    <img src="files/image/CFig04_26.jpg" alt="">
 </div> 
 
 # Developing an ER Diagram
@@ -238,12 +238,12 @@ Building an ERD usually involves the following activities as a <span class="blue
 - Each school has several departments.
   - The number of departments operated by a school is at least one to many
   - Each department belongs to only a single school
-![bg right:40% w:100% CFig04_27](restricted/CFig04_27.jpg)
+![bg right:40% w:100% CFig04_27](files/image/CFig04_27.jpg)
 
 # Tiny College (TC) (3/10)
 - Each department may offer courses.
   - Some departments that were classified as "research only," they would not offer courses; therefore, the COURSE entity would be optional to the DEPARTMENT entity.
-![bg right:40% w:100% CFig04_28](restricted/CFig04_28.jpg)
+![bg right:40% w:100% CFig04_28](files/image/CFig04_28.jpg)
 
 # Tiny College (TC) (4/10)
 - A course can be taught in several classes.
@@ -251,44 +251,44 @@ Building an ERD usually involves the following activities as a <span class="blue
 - A class is offered during a given semester. SEMESTER defines the year and the term that the class will be offered. 
 - CLASS is optional to SEMESTER.
 - CLASS is optional to COURSE.
-![bg right:40% w:100% CFig04_29](restricted/CFig04_29.jpg)
+![bg right:40% w:100% CFig04_29](files/image/CFig04_29.jpg)
 
 # Tiny College (TC) (5/10)
 - Each department should have one or more professors assigned to it. 
 - One and only one of those professors chairs the department
 - Not all professors are required to chair a department. 
 - DEPARTMENT is optional to PROFESSOR in the "chairs" relationship.
-![bg right:40% w:100% CFig04_30](restricted/CFig04_30.jpg)
+![bg right:40% w:100% CFig04_30](files/image/CFig04_30.jpg)
 
 # Tiny College (TC) (6/10)
 - Each professor may teach up to four classes; each class is belong to a course.
 - A professor may also be on a research contract and teach no classes at all.
-![bg right:40% w:100% CFig04_31](restricted/CFig04_31.jpg)
+![bg right:40% w:100% CFig04_31](files/image/CFig04_31.jpg)
 
 # Tiny College (TC) (7/10)
 - A student may enroll in several classes but take each class only once.
 - Each student may enroll in up to six classes, and each class may have up to 35 students, (STUDENT and CLASS is M:N relationship ). 
 - This M:N relationship must be divided into two 1:M relationships by ENROLL entity 
-![bg right:40% w:100% CFig04_32](restricted/CFig04_32.jpg)
+![bg right:40% w:100% CFig04_32](files/image/CFig04_32.jpg)
 
 # Tiny College (TC) (8/10)
 - Each department has several students whose major is offered by that department. <span class="red-text">(VAGUE!!)</span>
 - Each student has only a single major associated with a single department.
 - It is possible for a student not to declare a major field of study.
-![bg right:40% w:100% CFig04_33](restricted/CFig04_33.jpg)
+![bg right:40% w:100% CFig04_33](files/image/CFig04_33.jpg)
 
 # Tiny College (TC) (9/10)
 - Each student has an advisor in his or her department
 - Each advisor counsels several students.
 - An advisor is also a professor, but not all professors advise students.
-![bg right:40% w:100% CFig04_34](restricted/CFig04_34.jpg)
+![bg right:40% w:100% CFig04_34](files/image/CFig04_34.jpg)
 
 # Tiny College (TC) (10/10)
 - A class is taught in a room.
 - Each room is located in a building.
 - A building can contain many rooms. 
 - Some buildings do not contain (class) rooms.
-![bg right:40% w:100% CFig04_35](restricted/CFig04_35.jpg)
+![bg right:40% w:100% CFig04_35](files/image/CFig04_35.jpg)
 
 # Tiny College (TC) (Summary: Entities)
 PROFESSOR
@@ -303,10 +303,10 @@ ROOM
 ENROLL (the associative entity between STUDENT and CLASS)
 
 # Summary: Components of ERM
-![bg right:70% w:100% CTable04_04](restricted/CTable04_04.jpg)
+![bg right:70% w:100% CTable04_04](files/image/CTable04_04.jpg)
 
 # Summary: Completed ERD
-![bg right:70% w:60% CFig04_36](restricted/CFig04_36.jpg)
+![bg right:70% w:60% CFig04_36](files/image/CFig04_36.jpg)
 
 # Database Design Challenges: Conflicting Goals
 - Database designers must often make design compromises that are triggered by conflicting <span class='blue-text'>GOALS</span>
@@ -321,13 +321,3 @@ ENROLL (the associative entity between STUDENT and CLASS)
 
 # Homework #B
 資料庫課程作業(B)
-
-# Present Final Project Progress
-- Date: 04/15 (專班) and 04/16 (資財)
-- Duration: 5 minutes per team
-- Approach: oral presentation and one word page only
-- Agenda:
-  - Project briefing and teaming
-  - Expected deliverables 
-  - Current progress
-  - Support needed (if any)

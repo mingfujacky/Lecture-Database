@@ -265,6 +265,15 @@ Table ENROLL is a composite entry (bridge entry, associative entry, link table) 
 </div>
 
 # Review Questions
-- What is the integrity rules in RDBMS?
-- Describe relational database operators to manipulate relational table contents.
-- Describe how to deal with M:N relationship.
+- What are the two integrity rules in RDBMS?
+- Describe how to deal with M:N relationship
+- What is the purpose of relational algebra in relational databases?
+A. Encrypt data
+B. Design the user interface
+C. Define how to manipulate table contents using set operations
+D. Normalize data structures
+- Which relational set operator is to select a subset of columns?
+A. SELECT
+B. COLUMN
+C. PROJECT
+D. PRODUCT
