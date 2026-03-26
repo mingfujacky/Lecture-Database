@@ -124,9 +124,9 @@ PK: in a separated cell with bold and underline font
 - (1, 1): each class is taught by one and only one professor
 
 # Existence Dependence
-- Entity can be <span class="blue-text">strong</span> or <span class="blue-text">weak</span> depending on whether the entity can exist independently or not.
-- A strong entity can exist apart from all of its related entities, it is <span class="blue-text">existence-independent</span>
-- A weak entity is <span class="blue-text">existence-dependent</span> on another related entity occurrence
+- An entity is classified as <span class="blue-text">strong</span> or <span class="blue-text">weak</span> based on its ability to exist independently:
+  - A strong entity can exist apart from all of its related entities, it is <span class="blue-text">existence-independent</span>
+  - A weak entity is <span class="blue-text">existence-dependent</span> on another related entity occurrence
 - Relationship 'EMPLOYEE claims DEPENDENT', the DEPENDENT entity is existence dependent on the EMPLOYEE entity. That is, DEPENDENT has a mandatory (NOT NULL) foreign key, EMP_NUM to link with EMPLOYEE. 
 
 # Weak Entity
