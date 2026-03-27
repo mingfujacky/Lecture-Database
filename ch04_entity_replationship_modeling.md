@@ -105,7 +105,7 @@ PK: in a separated cell with bold and underline font
     <img src="files/image/CFig04_06.jpg" alt="">
 </div>
 <br>
-<span class="brown-text">Q: What attribute is proper to use derived attributed, working_year or total_amount?</span>
+<span class="brown-text">Q: What attribute is proper to use derived attribute, working_year or total_amount?</span>
 
 # Relationship
 - The entities that participate in a relationship are also known as <span class="blue-text">participants</span>
