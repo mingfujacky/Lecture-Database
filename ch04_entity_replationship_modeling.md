@@ -243,6 +243,7 @@ Building an ERD usually involves the following activities as a <span class="blue
 # Tiny College (TC) (3/10)
 - Each department may offer courses.
   - Some departments that were classified as "research only," they would not offer courses; therefore, the COURSE entity would be optional to the DEPARTMENT entity.
+  - Each course is offered by only one department.
 ![bg right:40% w:100% CFig04_28](files/image/CFig04_28.jpg)
 
 # Tiny College (TC) (4/10)
@@ -315,9 +316,14 @@ ENROLL (the associative entity between STUDENT and CLASS)
 - However, a design that meets all requirements and design conventions are the most important goals
 
 # Review Questions
-- What is the difference between weak entity and strong entity?
-- What is the difference between weak (non-identifying) and identifying (strong) relationship?
-- How to translate M:N relationship in ERM?
+1. What is the difference between weak entity and strong entity?
+2. How to translate M:N relationship in ERM?
+3. Which statement about attributes is TRUE?
+A. A multi-valued attribute may require a separate entity to implement properly 
+B. A derived attribute is stored permanently in the database
+C. A composite attribute cannot be divided into smaller sub-parts
+D. An identifier attribute is optional and should be nullable
+
 
 # Homework #B
 資料庫課程作業(B)
