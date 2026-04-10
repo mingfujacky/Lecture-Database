@@ -288,7 +288,7 @@ Building an ERD usually involves the following activities as a <span class="blue
 - A class is taught in a room.
 - Each room is located in a building.
 - A building can contain many rooms. 
-- Some buildings do not contain (class) rooms.
+- Some buildings do not contain rooms.
 ![bg right:40% w:100% CFig04_35](files/image/CFig04_35.jpg)
 
 # Tiny College (TC) (Summary: Entities)
