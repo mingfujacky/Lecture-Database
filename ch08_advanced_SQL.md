@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
 footer: 國立陽明交通大學 電子與光子學士學位學程
@@ -60,10 +60,10 @@ style: |
 4. Insert data
 
 # Design ER model
-![bg right:70% w:100%](restricted/CFig08_01.jpg)
+![bg right:70% w:100%](files/image/CFig08_01.jpg)
 
 # Create Database and Insert Data
-![bg right:70% w:80%](restricted/CFig08_02.jpg)
+![bg right:70% w:80%](files/image/CFig08_02.jpg)
 
 # Create Table Syntax
 ```sql
@@ -599,7 +599,7 @@ set SQL_SAFE_UPDATES = 1;
 - One of the most valuable features of working with stored procedures is their ability to use parameters
 - A parameter is a value that is provided to the program at the time of execution
 <div class="middle-grid">
-    <img src="restricted/CFig08_21.jpg" alt="">
+    <img src="files/image/CFig08_21.jpg" alt="">
 </div>
 
 # Procedural SQL Used in Triggers

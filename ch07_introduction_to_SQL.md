@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: default
-class: invert
+class: default
 size: 16:9
 paginate: true
 footer: 國立陽明交通大學 電子與光子學士學位學程
@@ -91,16 +91,16 @@ CREATE INDEX - creates an index (search key); DROP INDEX - deletes an index</spa
 - SQL is a nonprocedural language, including many set operators
 
 # SQL Data Manipulation Commands
-![bg right:65% w:90%](restricted/CTable07_01.jpg)
+![bg right:65% w:90%](files/image/CTable07_01.jpg)
 
 # SQL Data Definition Commands
-![bg right:65% w:90%](restricted/CTable07_02.jpg)
+![bg right:65% w:90%](files/image/CTable07_02.jpg)
 
 # Basic Data Types
 - Numeric
 - Character
 - Date
-![bg right:60% w:100%](restricted/CTable08_01.jpg)
+![bg right:60% w:100%](files/image/CTable08_01.jpg)
 
 # MySQL Data Types
 - String: char, text, binary, blob
@@ -200,10 +200,10 @@ one invoice.
 - Some products are not supplied by a vendor.
 
 # Step1B: Deliver ER Diagram
-![bg right:65% w:90%](restricted/CFig07_01.jpg)
+![bg right:65% w:90%](files/image/CFig07_01.jpg)
 
 # Step1C: Data Dict
-![bg right:80% w:90%](restricted/CTable08_02.jpg)
+![bg right:80% w:90%](files/image/CTable08_02.jpg)
 
 # Step2: Create Database (MySQL syntax) (DDL)
 ```sql
@@ -396,7 +396,7 @@ INSERT INTO LINE VALUES(1008,3,'23109-HB',1,9.95);
 ```
 
 # Data in Database
-![bg right:70% w:90%](restricted/CFig08_02.jpg)
+![bg right:70% w:90%](files/image/CFig08_02.jpg)
 
 # Basic SELECT Syntax (DML)
 ```sql
@@ -724,10 +724,10 @@ PRODUCT -> SELECT -> PROJECT
 </style>
 
 <div class="grid">
-    <img src="restricted/CFig03_10.jpg" alt="two tables">
-    <img src="restricted/CFig03_11.jpg" alt="product">
-    <img src="restricted/CFig03_12.jpg" alt="select">
-    <img src="restricted/CFig03_13.jpg" alt="project">
+    <img src="files/image/CFig03_10.jpg" alt="two tables">
+    <img src="files/image/CFig03_11.jpg" alt="product">
+    <img src="files/image/CFig03_12.jpg" alt="select">
+    <img src="files/image/CFig03_13.jpg" alt="project">
 </div>
 
 # Example of JOIN ON
@@ -821,7 +821,7 @@ FROM VENDOR
 FULL JOIN PRODUCT ON VENDOR.V_CODE = PRODUCT.V_CODE;
 ```
 <div class="middle-grid">
-    <img src="restricted/CFig07_33.jpg" alt="">
+    <img src="files/image/CFig07_33.jpg" alt="">
 </div>
 
 # Cross Join
@@ -1161,19 +1161,19 @@ ORDER BY DATE_ADD(P_INDATE, INTERVAL 2 YEAR);
 ```
 # MySQL Date/Time Functions
 <div class="middle-grid">
-    <img src="restricted/CTable07_10a.jpg" alt="">
-    <img src="restricted/CTable07_10b.jpg" alt="">
+    <img src="files/image/CTable07_10a.jpg" alt="">
+    <img src="files/image/CTable07_10b.jpg" alt="">
 </div>
 
 # MySQL Numeric Functions
 <div class="middle-grid">
-    <img src="restricted/CTable07_11.jpg" alt="">
+    <img src="files/image/CTable07_11.jpg" alt="">
 </div>
 
 # MySQL Conversion Functions
 <div class="middle-grid">
-    <img src="restricted/CTable07_13a.jpg" alt="">
-    <img src="restricted/CTable07_13b.jpg" alt="">
+    <img src="files/image/CTable07_13a.jpg" alt="">
+    <img src="files/image/CTable07_13b.jpg" alt="">
 </div>
 
 # Relational Set Operators (UNION)
@@ -1185,7 +1185,7 @@ SELECT CUS_LNAME, CUS_FNAME, CUS_INITIAL, CUS_AREACODE, CUS_PHONE
 FROM CUSTOMER_2;
 ```
 <div class="middle-grid">
-    <img src="restricted/CFig07_61.jpg" alt="">
+    <img src="files/image/CFig07_61.jpg" alt="">
 </div>
 
 # Relational Set Operators (UNION ALL)
@@ -1197,7 +1197,7 @@ SELECT CUS_LNAME, CUS_FNAME, CUS_INITIAL, CUS_AREACODE, CUS_PHONE
 FROM CUSTOMER_2;
 ```
 <div class="middle-grid">
-    <img src="restricted/CFig07_62.jpg" alt="">
+    <img src="files/image/CFig07_62.jpg" alt="">
 </div>
 
 # Crafting SELECT Queries
