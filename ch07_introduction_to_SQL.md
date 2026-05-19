@@ -1216,6 +1216,9 @@ FROM CUSTOMER_2;
 - What three join types are included in the OUTER JOIN classification? 
 - What are the four categories of SQL functions
 
+# Homework #D
+資料庫課程作業(D)
+
 # Backup
 # Correlated Subqueries (Definition)
 - <span class="blue-text">Inner subquery</span>

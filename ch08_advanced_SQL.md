@@ -939,9 +939,6 @@ InternalError | 1054: Unknown column | Internal MySQL issue
 # Recap SQL Statement
 [W3 School SQL Quiz](https://www.w3schools.com/mysql/mysql_quiz.asp)
 
-# Homework #D
-資料庫課程作業(D)
-
 # Tips and Tricks
 - Working in wrong database
 - Using the wrong server
