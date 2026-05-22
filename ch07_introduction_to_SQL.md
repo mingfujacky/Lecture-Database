@@ -925,7 +925,7 @@ SELECT INV_NUMBER, COUNT(LINE_NUMBER) AS ITEMS, SUM(LINE_UNITS * LINE_PRICE) as 
 FROM LINE
 GROUP BY INV_NUMBER
 
--- Question: how many invoices do each customer has?
+-- Question: how many lines and total amount in terms of each invoice
 
 ```
 

@@ -307,6 +307,11 @@ UPDATE PRODUCT
 SET P_PRICE = P_PRICE * 1.10
 WHERE P_PRICE < 50.00
 ```
+# Safe Update Mode in MySQL
+- By default, MySQL often has this mode turned on (SQL_SAFE_UPDATES = 1) as a safety net to prevent a very common, catastrophic mistake: accidentally updating or deleting every single row in a table.
+- When Safe Update Mode is active, MySQL will refuse to execute any UPDATE or DELETE statement unless it meets at least one of these conditions:
+  - The query includes a WHERE clause that uses a Key Column (a Primary Key or an Indexed column).
+  - The query includes a LIMIT clause.
 
 # Deleting Table Rows
 ```sql
