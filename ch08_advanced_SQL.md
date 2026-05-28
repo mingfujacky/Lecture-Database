@@ -503,7 +503,6 @@ Use Case | Stored Procedure | Stored Function
 Modify data (INSERT, UPDATE, DELETE)?|Yes|No (only SELECT)
 Return value?|Out parameters|Return statement
 Use inside a SELECT statement?|No|Yes
-DETERMINISTIC / NOT DETERMINISTIC?|Optional|Yes
 Invocation| CALL statement |within SQL statements
 
 # Conditional Execution
@@ -552,60 +551,6 @@ delimiter ;
 -- Call the procedure p_more_sensible_loop()
 call p_more_sensible_loop();
 ```
-
-# SELECT Processing with Cursors
-- A cursor is a special construct used to hold data rows returned by a SQL query
-- To create an explicit cursor, you use the following syntax:
-  DECLARE cursor_name CURSOR FOR select-query;
-- Cursor-style processing involves retrieving data from the cursor one row at a time and copied to variables
-
-# Cursor Example (p_split_big_ny_counties.sql)
-```sql
-drop procedure if exists p_split_big_ny_counties;
-delimiter //
-create procedure p_split_big_ny_counties()
-    begin
-        declare  v_state       varchar(100);
-        declare  v_county      varchar(100);
-        declare  v_population  int;
-        declare done bool default false;
-        declare cnt int default 1;
-        declare county_cursor cursor for select  state, county, population
-                                         from    county_population
-                                         where   state = 'New York' and population > 2000000;
-        declare continue handler for not found set done = true;   
-        open county_cursor;
-        fetch_loop: loop
-            fetch county_cursor into v_state, v_county, v_population;
-            if done then
-                leave fetch_loop;
-            end if;
-            set cnt = 1;
-            split_loop: loop
-                insert into county_population (state, county, population)
-                    values (v_state,concat(v_county,'-',cnt), round(v_population/2));
-                set cnt = cnt + 1;
-                if cnt > 2 then
-                    leave split_loop;
-                end if;
-            end loop split_loop;
-    
-            -- delete the original county
-            delete from county_population where state = v_state and county = v_county;
-        end loop fetch_loop;
-        close county_cursor;
-end//
-delimiter ;
-set SQL_SAFE_UPDATES = 0;
-call p_split_big_ny_counties;
-set SQL_SAFE_UPDATES = 1;
-```
-# Stored Procedures with Parameters
-- One of the most valuable features of working with stored procedures is their ability to use parameters
-- A parameter is a value that is provided to the program at the time of execution
-<div class="middle-grid">
-    <img src="files/image/CFig08_21.jpg" alt="">
-</div>
 
 # Procedural SQL Used in Triggers
 A trigger is a procedural SQL code automatically invoked by the relational DBMS when a data manipulation event occurs
@@ -1018,6 +963,8 @@ where vin='4XBCX68RFWE532566'
 # Supporting an Existing System
 In workbench, choose menu "Database" to select "Reverse Engineer" function
 
+# Backup Slides
+
 # Most Common Database Design
 - business field as primary key
 - storing redundant data
@@ -1035,3 +982,57 @@ MySQL command line client tool that run SQL, Python or JavaScript commands
 > \sql
 > select * from employee;
 > \quit
+
+# SELECT Processing with Cursors
+- A cursor is a special construct used to hold data rows returned by a SQL query
+- To create an explicit cursor, you use the following syntax:
+  DECLARE cursor_name CURSOR FOR select-query;
+- Cursor-style processing involves retrieving data from the cursor one row at a time and copied to variables
+
+# Cursor Example (p_split_big_ny_counties.sql)
+```sql
+drop procedure if exists p_split_big_ny_counties;
+delimiter //
+create procedure p_split_big_ny_counties()
+    begin
+        declare  v_state       varchar(100);
+        declare  v_county      varchar(100);
+        declare  v_population  int;
+        declare done bool default false;
+        declare cnt int default 1;
+        declare county_cursor cursor for select  state, county, population
+                                         from    county_population
+                                         where   state = 'New York' and population > 2000000;
+        declare continue handler for not found set done = true;   
+        open county_cursor;
+        fetch_loop: loop
+            fetch county_cursor into v_state, v_county, v_population;
+            if done then
+                leave fetch_loop;
+            end if;
+            set cnt = 1;
+            split_loop: loop
+                insert into county_population (state, county, population)
+                    values (v_state,concat(v_county,'-',cnt), round(v_population/2));
+                set cnt = cnt + 1;
+                if cnt > 2 then
+                    leave split_loop;
+                end if;
+            end loop split_loop;
+    
+            -- delete the original county
+            delete from county_population where state = v_state and county = v_county;
+        end loop fetch_loop;
+        close county_cursor;
+end//
+delimiter ;
+set SQL_SAFE_UPDATES = 0;
+call p_split_big_ny_counties;
+set SQL_SAFE_UPDATES = 1;
+```
+# Stored Procedures with Parameters
+- One of the most valuable features of working with stored procedures is their ability to use parameters
+- A parameter is a value that is provided to the program at the time of execution
+<div class="middle-grid">
+    <img src="files/image/CFig08_21.jpg" alt="">
+</div>
