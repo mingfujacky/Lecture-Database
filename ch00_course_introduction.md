@@ -47,7 +47,8 @@ style: |
     font-size: 0.50rem;
   }
 ---
-# 資料庫管理(520007)
+# 資料庫管理 (Database Management)
+- 光復校區(520007), 高雄校區(520025)
 - 講師：林志偉
 - 教材：https://github.com/mingfujacky/Lecture-Database.git
 ![bg right:20% w:200 Data Structure Material in Git](files/image/qrcode_lecture_database.png)
@@ -66,8 +67,8 @@ style: |
 - #### Email: jacky.jw.lin@nycu.edu.tw
 
 # 課程助教
-- 陳宗佑 joey76171.sc13@nycu.edu.tw
-- 蔡孟哲 aayy0917.sc13@nycu.edu.tw
+- 光復校區: TBD
+- 高雄校區: TBD
 
 # 生活中怎麼表達資料庫概念
 [![Excel Files vs Database](https://i.ytimg.com/vi/7yYbbKyyHvw/mqdefault.jpg)](https://youtu.be/7yYbbKyyHvw?si=Y3vrhXjLHS4FGtkN)
@@ -112,7 +113,7 @@ style: |
 > 1. 按照助教安排進入考場入座，不得攜帶書本及參考資料
 > 2. 不得使用手機，請將手機放置在監考人員的可視範圍內，如桌上或教室前面
 > 3. 攜帶學生證或其他可以確認身份的證件
-> 4. 考試時間為六十分鐘
+> 4. 考試時間為六十分鐘或九十分鐘，請同學注意試卷上的時間規定
 
 # 期末專題報告至少需包含以下內容
 - **Requirements** we plan to fulfill and/or **problems** we plan to solve
@@ -121,10 +122,7 @@ style: |
 - Database design (ERD, normalization, data dictionary)
 - Database implementation (SQL script)
 - Application briefings (systems architecture, main function screen shot) 
-- Lesson learned
-- Present date (06/05, 預計16組, 每組10分鐘)
-- Report submission deadline: 06/19 23:59 
-
+- Lesson learned 
 
 # Members in Project
 - **End user**: define business rule and function requirements 
@@ -135,7 +133,10 @@ style: |
 - Project manager: team organization, schedule control and communication
 
 # 授課大綱
-[114下學期](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=114&Sem=2&CrsNo=520007&lang=zh-tw)
+[115上學期](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=520007&lang=zh-tw)
 
 # Software We Use in Class
 ![bg right 70% w 100%](files/image/workbench.jpg)
+- MySQL Server
+- MySQL Workbench
+- mysql-connector-python package
