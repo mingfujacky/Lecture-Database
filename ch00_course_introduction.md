@@ -133,7 +133,8 @@ style: |
 - Project manager: team organization, schedule control and communication
 
 # 授課大綱
-[115上學期](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=520007&lang=zh-tw)
+[光復校區 115上學期](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=520007&lang=zh-tw)
+[高雄校區 115上學期](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=520025&lang=zh-tw)
 
 # Software We Use in Class
 ![bg right 70% w 100%](files/image/workbench.jpg)
