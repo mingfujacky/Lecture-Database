@@ -67,8 +67,8 @@ style: |
 - #### Email: jacky.jw.lin@nycu.edu.tw
 
 # 課程助教
-- 光復校區: TBD
-- 高雄校區: TBD
+- 光復校區: 陳柏綸 (derek920531@gmail.com), 胡凱翔 (hks.sc13@nycu.edu.tw)
+- 高雄校區: 陳往誼 (iocm1863@gmail.com), 張宸豪 (cz411053@gmail.com)
 
 # 生活中怎麼表達資料庫概念
 [![Excel Files vs Database](https://i.ytimg.com/vi/7yYbbKyyHvw/mqdefault.jpg)](https://youtu.be/7yYbbKyyHvw?si=Y3vrhXjLHS4FGtkN)
@@ -98,12 +98,9 @@ style: |
 > 6. 期末專題
 
 # 評分方式
-- (10%) 課堂參與
-  > 5次點名 
-  > 正常出席得 2分, 有請假單得 1分, 無故缺席得 0分
 - (20%) 課後作業: 4次作業 (不受理遲交)
 - (20%) 期中考試
-- (20%) 期末考試
+- (30%) 期末考試
 - (30%) 期末專題: 採分組進行，每5~7人一組，題目自訂
   - 期中考後一週完成分組並決定專題題目
   - 期末考前一週進行口頭報告並於期限內上傳期末專題書面報告 (不受理遲交)
@@ -113,7 +110,7 @@ style: |
 > 1. 按照助教安排進入考場入座，不得攜帶書本及參考資料
 > 2. 不得使用手機，請將手機放置在監考人員的可視範圍內，如桌上或教室前面
 > 3. 攜帶學生證或其他可以確認身份的證件
-> 4. 考試時間為六十分鐘或九十分鐘，請同學注意試卷上的時間規定
+> 4. 考試時間為九十分鐘
 
 # 期末專題報告至少需包含以下內容
 - **Requirements** we plan to fulfill and/or **problems** we plan to solve
